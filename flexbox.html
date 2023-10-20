@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+        }
+
+        .header{
+            background-color: rgb(70, 113, 5);
+            padding: 80px;
+            text-align: center;
+            color: white;
+        }
+        .navbar{
+            display: flex;
+            justify-content: center;
+            background-color: black;
+
+        }
+
+        .navbar a{
+            color: white;
+            padding: 14px 20px ;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover{
+            background-color: gray;
+            color: black;
+            font-weight: bold;
+
+        }
+
+        .corpo{
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+
+        .card{
+            flex:48%;
+            background-color: #ccc;
+            height: 400px;
+            margin: 1%;
+        }
+
+        @media only screen and (max-width: 700px){
+            .navbar{
+                flex-direction: column;
+            }
+        }
+
+      
+    </style>
+</head>
+<body>
+    
+
+   <header class="header">
+    <h1>Flexbox</h1>
+    <p>Este é um layout flexível</p>
+   </header>
+
+   <nav class="navbar">
+
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+
+   </nav>
+
+   <div class="corpo">
+    <div class="card">
+        <h2>card 1</h2>
+
+    </div>
+    <div class="card">
+        <h2>card 2</h2>
+
+
+    </div>
+   </div>
+</body>
+</html>
